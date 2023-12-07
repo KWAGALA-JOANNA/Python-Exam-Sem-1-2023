@@ -18,7 +18,8 @@ print(f'The book is called {book_info.title}, it was written by {book_info.autho
     
 # ii)
 class Ebook (Book):
-    pass
+    def __init__(self, title, author, pages, format):
+        self.format =format
 ebook_info = Ebook(Book('Wells of Hope', 'B.Matthew',178))
 print (f'{ebook_info.title}, {ebook_info.author}, {ebook_info.pages}, {ebook_info.format}')
       

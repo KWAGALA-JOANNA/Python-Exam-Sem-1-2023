@@ -20,7 +20,8 @@ print(f'The book is called {book_info.title}, it was written by {book_info.autho
 class Ebook (Book):
     def __init__(self, title, author, pages, format):
         self.format =format
-ebook_info = Ebook(Book('Wells of Hope', 'B.Matthew',178))
+        super().__init__( title, author, pages)
+ebook_info = Ebook('Wells of Hope', 'B.Matthew',178, 'pdf')
 print (f'{ebook_info.title}, {ebook_info.author}, {ebook_info.pages}, {ebook_info.format}')
       
 # iv)
